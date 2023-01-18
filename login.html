@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="user signinBx">
+                <div class="imgBx">
+                    <img src="img/img1.jpg" alt="">
+                </div>
+                <div class="formBx">
+                    <form action="">
+                        <h2>Login</h2>
+                        <input type="email" name="" placeholder="Enter Email" id="">
+                        <input type="password" name="" placeholder="Password" id="">
+                        <input type="submit" value="Login">
+                        <p class="signup">Belum Punya akun ? <a href="#" onclick="javascript:doToggle();">Daftar</a></p>
+                    </form>
+                </div>
+            </div>
+            <div class="user signupBx">
+                <div class="formBx">
+                    <form action="">
+                        <h2>Buat akun</h2>
+                        <input type="text" name="" placeholder="Username" id="">
+                        <input type="email" name="" placeholder="Enter Email" id="">
+                        <input type="password" name="" placeholder="Create Password" id="">
+                        <input type="password" name="" placeholder="Confirm Password" id="">
+                        <input type="submit" value="Sign Up">
+                        <p class="signup">Akun Sudah ada <a href="#" onclick="javascript:doToggle();">Login</a></p>
+                    </form>
+                </div>
+                <div class="imgBx"><img src="img/img2.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function doToggle(){
+            var container = document.querySelector('.container');
+                container.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
